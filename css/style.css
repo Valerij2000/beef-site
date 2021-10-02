@@ -1,0 +1,79 @@
+:root {
+  --color43: #43cb83;
+}
+
+header, footer, section {
+  padding: 100px;
+}
+
+@media (max-width: 768px) {
+  header, footer, section {
+    padding: 20px;
+  }
+}
+
+#generalContentSection {
+  background-image: url('../images/footer-font.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.step_block {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  background-color: white;
+}
+
+.step__ {
+  cursor: pointer;
+  display: block;
+  margin: auto 10px;
+  font-weight: 800;
+  padding: 10px;
+  width: 100px;
+  border-radius: 24%;
+}
+
+@media (max-width: 400px) {
+  .step__ {
+    margin: auto;
+    font-size: 12px;
+  }
+}
+
+.form_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form {
+  width: 40%;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+}
+@media (max-width: 992px ) {
+  .input-form {
+    width: 80%;
+  }
+}
+@media (max-width: 480px ) {
+  .input-form {
+    width: 100%;
+  }
+}
+.next-btn {
+  color: var(--color43);
+  font-weight: 900;
+}
+
+.error-label {
+  display: none;
+  color: red;
+}
